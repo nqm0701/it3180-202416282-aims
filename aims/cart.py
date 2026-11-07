@@ -48,3 +48,6 @@ class Cart:
     def sort_by_cost(self):
         """Sắp xếp các đĩa trong giỏ hàng theo giá giảm dần."""
         self.items.sort(key=lambda dvd: dvd.cost, reverse=True)
+
+    def clear(self):
+        self.items.clear()
