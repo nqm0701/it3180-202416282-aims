@@ -46,7 +46,7 @@ class Cart:
 
     def sort_by_title(self):
         """Sắp xếp các đĩa trong giỏ hàng theo tiêu đề (A-Z)."""
-        self.items.sort(key=lambda dvd: dvd.title)
+        self.items.sort(key=lambda dvd: dvd.title.lower())
 
     def sort_by_cost(self):
         """Sắp xếp các đĩa trong giỏ hàng theo giá giảm dần."""
