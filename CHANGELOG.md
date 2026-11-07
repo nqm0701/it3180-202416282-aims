@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-07
+### Added
+- Cart.clear(), Cart.filter_by_category()
+
 ## [1.0.0] - 2026-11-07
 ### Added
 - Cart.print_cart(), total_cost_with_discount(), sort_by_title(), sort_by_cost()
