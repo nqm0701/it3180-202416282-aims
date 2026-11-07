@@ -41,6 +41,9 @@ class Cart:
         total = sum(item.cost for item in self.items)
         return total * (1 - percent / 100)
 
+    def filter_by_category(self, category):
+        return [dvd for dvd in self.items if dvd.category == category]
+
     def sort_by_title(self):
         """Sắp xếp các đĩa trong giỏ hàng theo tiêu đề (A-Z)."""
         self.items.sort(key=lambda dvd: dvd.title)
