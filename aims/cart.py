@@ -30,3 +30,6 @@ class Cart:
            return self.total_cost() * percent / 100
    EOF
 
+
+    def total_cost_with_coupon(self, percent):
+        return self.total_cost() * percent / 100
